@@ -11,41 +11,48 @@
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<script type="text/javascript">
-
-function show_login()
-{
-    $("register_div").fadeOut('fast', function() {
-    $("#login_div").fadeIn();
-});
-}
-
-</script>
-    </head>
-    <body>
-    <div id="wrapper">
-
-<section id="login_div">
-<form action="" autocomplete="on">
-<h1>Log In</h1>
-<p><input name="username" required="required" type="email" placeholder="Enter your email"></p>
-<p><input name="password" required="required" type="password" placeholder="************"></p>
-<p><input type="submit" value="Do Login"/></p>
-<p class="change_link"> Not a memeber yet? <input type="buttom" onclick="show_signup();" value="Join us"></p>
-</form>
-</section>
-
-<section id="register_div">
-<form action="" autocomplete="on">
-    <h1>Sign Up</h1>
-
-<p><input name="username" required="required" text="text" placeholder="Enter you name"/></p>
-<p><input name="email" required="required" text="email" placeholder="Enter you email"/></p>
-<p><input name="password" required="required" text="password" placeholder="************"/></p>
-<p><input name="password_confirm" required="required" text="password" placeholder="************"/></p>
-<p><input name="submit" value="Do Sign Up"/></p>
-</form>
-</section>
-    </div>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript">
+        function show_signup()
+        {
+            $("#login_div").fadeOut('fast', function() {
+                $("#register_div").fadeIn();
+            });
+        }
+        function show_login()
+        {
+            $("#register_div").fadeOut('fast', function() {
+                $("#login_div").fadeIn();
+            });
+        }
+        </script>
+            </head>
+            <body>
+            <div id="wrapper">
+            
+            <section id="login_div">
+             <form  action="" autocomplete="on">
+              <h1>LOG IN</h1>
+              <p><input name="username" required="required" type="email" placeholder="Enter Your Email"/></p>
+              <p><input name="password" required="required" type="password" placeholder="************" /></p>
+              <p><input type="submit" value="LOGIN"/></p>
+              <p class="change_link">Not a member yet ?<input type="button" onclick="show_signup();" value="Join us"></p>
+             </form>
+            </section>
+            
+            <section id="register_div">
+             <form action="" autocomplete="on">
+              <h1>SIGN UP</h1>
+              <p><input name="username" required="required" type="text" placeholder="Enter Your Name"/></p>
+              <p><input name="email" required="required" type="email" placeholder="Enter Your Email"/></p>
+              <p><input name="password" required="required" type="password" placeholder="*********"/></p>
+              <p><input name="password_confirm" required="required" type="password" placeholder="*********"/></p>
+              <p><input type="submit" value="SIGN UP"/></p>
+              <p class="change_link">Already a member ?<input type="button" onclick="show_login();" value="Log in"></p>
+             </form>
+            </section>
+            
+            </div>
+    <div return> <a href="index.html">Return Back to Index - Just here for testing</a> </div>
     </body>
 </html>
