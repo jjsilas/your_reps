@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Your Representative </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="form_style.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<script type="text/javascript">
+
+function show_login()
+{
+    $("register_div").fadeOut('fast', function() {
+    $("#login_div").fadeIn();
+});
+}
+
+</script>
+    </head>
+    <body>
+    <div id="wrapper">
+
+<section id="login_div">
+<form action="" autocomplete="on">
+<h1>Log In</h1>
+<p><input name="username" required="required" type="email" placeholder="Enter your email"></p>
+<p><input name="password" required="required" type="password" placeholder="************"></p>
+<p><input type="submit" value="Do Login"/></p>
+<p class="change_link"> Not a memeber yet? <input type="buttom" onclick="show_signup();" value="Join us"></p>
+</form>
+</section>
+
+<section id="register_div">
+<form action="" autocomplete="on">
+    <h1>Sign Up</h1>
+
+<p><input name="username" required="required" text="text" placeholder="Enter you name"/></p>
+<p><input name="email" required="required" text="email" placeholder="Enter you email"/></p>
+<p><input name="password" required="required" text="password" placeholder="************"/></p>
+<p><input name="password_confirm" required="required" text="password" placeholder="************"/></p>
+<p><input name="submit" value="Do Sign Up"/></p>
+</form>
+</section>
+    </div>
+    </body>
+</html>
