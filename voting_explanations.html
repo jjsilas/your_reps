@@ -8,10 +8,14 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="form_style.css">
+        <link rel="stylesheet" href="votingexp.css">
+        <!--<link rel="stylesheet" href="form_style.css">-->
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      
+
     </head>
     <body>
        
@@ -20,21 +24,19 @@
             <h2>The reason they voted, or didn't attend a vote</h2>
         </header>
 <section>
-    
+<div class="voteExSearch"> Congressional Members
+<input type="text1" name="search" placeholder="add name and press enter">
 
+</div> 
 </section>
 
 <section>
-    
+    <br>
 
 </section>
-
-
-        <script src="index.js" async defer></script>
-        <script src="log_sign_in.js" async defer></script>
-    
+<br>
         <div> <a href="congressional_votes.html">congressional_votes</a> </div>
-
+<br>
         <div return> <a href="index.html">Return Back to Index - Just here for testing</a> </div>
 
     </body>
@@ -42,7 +44,30 @@
             <h2>Do they represent you?</h2>
         </header>
 <section>
-    
+    <input type="text" id="expVoteInput" onkeyup="expVoteFunction()" placeholder="Search for names..">
+
+<table id="expVoteTable">
+  <tr class="header">
+    <th style="width:60%;">Representative</th>
+    <th style="width:40%;">Vote</th>
+  </tr>
+  <tr>
+    <td>Rep 1</td>
+    <td>vote 1</td>
+  </tr>
+  <tr>
+    <td>Rep 2</td>
+    <td>vote 2</td>
+  </tr>
+  <tr>
+    <td>Rep 3</td>
+    <td>vote 3</td>
+  </tr>
+  <tr>
+    <td>Rep 4</td>
+    <td>vote 4</td>
+  </tr>
+</table>
 
 </section>
 
@@ -50,6 +75,6 @@
         
     
         <div return> <a href="index.html">Return Back to Index - Just here for testing</a> </div>
-
+        <script type="text/javascript" src="voting_exp.js"></script>
     </body>
 </html>
