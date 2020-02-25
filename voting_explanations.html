@@ -23,12 +23,27 @@
             <h1>Voting Explanations</h1>
             <h2>The reason they voted, or didn't attend a vote</h2>
         </header>
-<section>
-<div class="voteExSearch"> Congressional Members
-<input type="text1" name="search" placeholder="add name and press enter">
 
-</div> 
+
+<!--THis is the search fo-->
+<section>
+  <div class="container">
+    <h3>Congressional Members</h3>
+
+    <form id="js-form">
+        <label for="search-term">Search term</label>
+        <input type="text" name="search-term" id="js-search-term" required>
+
+        <label for="max-results">Maximum results to return</label>
+        <input type="number" name="max-results" id="js-max-results" value="10">
+
+        <input type="submit" value="Go!">
+    </form>
+  </div>
+
 </section>
+
+
 
 <section>
     <br>
