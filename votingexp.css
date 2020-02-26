@@ -2,7 +2,7 @@ input[type=text1] {
     width: auto;
     height: auto;
     background-image: url('/css/searchicon.png');
-    background-position: auto; 
+    /*background-position: auto; */
     background-repeat: no-repeat;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;

@@ -31,13 +31,10 @@
     <h3>Congressional Members</h3>
 
     <form id="js-form">
-        <label for="search-term">Search term</label>
-        <input type="text" name="search-term" id="js-search-term" required>
+       
+      
 
-        <label for="max-results">Maximum results to return</label>
-        <input type="number" name="max-results" id="js-max-results" value="10">
-
-        <input type="submit" value="Go!">
+        <button type="submit"> Search Members </button>
     </form>
   </div>
 
@@ -66,22 +63,7 @@
     <th style="width:60%;">Representative</th>
     <th style="width:40%;">Vote</th>
   </tr>
-  <tr>
-    <td>Rep 1</td>
-    <td>vote 1</td>
-  </tr>
-  <tr>
-    <td>Rep 2</td>
-    <td>vote 2</td>
-  </tr>
-  <tr>
-    <td>Rep 3</td>
-    <td>vote 3</td>
-  </tr>
-  <tr>
-    <td>Rep 4</td>
-    <td>vote 4</td>
-  </tr>
+  <tbody id='vote'> </tbody>
 </table>
 
 </section>
@@ -91,5 +73,6 @@
     
         <div return> <a href="index.html">Return Back to Index - Just here for testing</a> </div>
         <script type="text/javascript" src="voting_exp.js"></script>
+        <script type="text/javascript" src="index.js"></script>
     </body>
 </html>
