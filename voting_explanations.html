@@ -25,53 +25,44 @@
         </header>
 
 
-<!--THis is the search fo-->
-<section>
-  <div class="container">
-    <h3>Congressional Members</h3>
-
-    <form id="js-form">
-       
-      
-
-        <button type="submit"> Search Members </button>
+<!--Search/Reduce results-->
+<section class="congressMembersSec">
+  <div class="containerVoteExp">
+    <form id="js-form"> Congressional Members <button type="submit"> Click of list of Representatives </button>
     </form>
   </div>
 
 </section>
 
-
-
-<section>
-    <br>
-
-</section>
 <br>
-        <div> <a href="congressional_votes.html">congressional_votes</a> </div>
+        <!-- Working on a second panel to look up votes by house.
+          
+<div> <a href="congressional_votes.html">congressional_votes</a> </div>
+        -->
 <br>
         <div return> <a href="index.html">Return Back to Index - Just here for testing</a> </div>
 
-    </body>
-</html> </h1>
-            <h2>Do they represent you?</h2>
+            <h3>Are they representing you?</h3>
         </header>
 <section>
     <input type="text" id="expVoteInput" onkeyup="expVoteFunction()" placeholder="Search for names..">
 
 <table id="expVoteTable">
   <tr class="header">
-    <th style="width:60%;">Representative</th>
-    <th style="width:40%;">Vote</th>
-  </tr>
+    <th style="width:50%;">Representative</th>
+    <th style="width:40%;">Vote Count</th>
+  <th style="width:10%;">Availabe Votes</th>
   <tbody id='vote'> </tbody>
 </table>
 
 </section>
 
-
+<div class="containerVoteExpBottom">
+  <form id="js-form"> <button type="submit"> Click of list of Representatives </button>
+  </form>
         
     
-        <div return> <a href="index.html">Return Back to Index - Just here for testing</a> </div>
+        <div return> <a href="index.html">Return Back to Index</a> </div>
         <script type="text/javascript" src="voting_exp.js"></script>
         <script type="text/javascript" src="index.js"></script>
     </body>

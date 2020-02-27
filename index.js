@@ -79,4 +79,10 @@ function renderVotes (data) {
   $('#vote').html(html)
 }
 
+
+
+
+
+
+
 $(watchForm);
