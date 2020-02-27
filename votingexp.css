@@ -1,18 +1,14 @@
-input[type=text1] {
-    width: auto;
-    height: auto;
-    background-image: url('/css/searchicon.png');
-    /*background-position: auto; */
-    background-repeat: no-repeat;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
+body {
+  text-align:center;
+  width:100%;
+  margin:0 auto;
+  padding:0px;
+  background-color: rgb(221, 203, 180);
 }
+
 
 /* When the input field gets focus, change its width to 100% */
 
-input[type=text1]:focus {
-    width: 70%;
-}
 
 #expVoteInput {
     background-image: url('/css/searchicon.png'); /* Add a search icon to input */

@@ -36,7 +36,7 @@ function render (data) {
   const html = members.map(member => `
   <tr>
     <td>${member.first_name} ${member.last_name}</td>
-    <td>${member.total_votes} (missed ${member.missed_votes}</td> 
+    <td>${member.total_votes} (missed ${member.missed_votes})</td> 
       <td> <button type="button" onClick="getVotes('${member.id}')"> getVotes </button> </td>
   </tr>
   `)
