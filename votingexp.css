@@ -16,20 +16,22 @@ body {
     background-repeat: no-repeat; /* Do not repeat the icon image */
     width: 100%; /* Full-width */
     font-size: 16px; /* Increase font-size */
-    padding: 12px 20px 12px 40px; /* Add some padding */
+    padding: 12px 20px 12px 40px;  /*Add some padding */
     border: 1px solid #ddd; /* Add a grey border */
-    margin-bottom: 12px; /* Add some space below the input */
+   margin-bottom: 10px;  /*Add some space below the input */
   }
   
   #expVoteTable {   /* Voting results  */
     border-collapse: collapse; /* Collapse borders */
-    width: 90%; 
+    width: 100%; 
     border: 1px solid #ddd; /* Add a grey border */
-    font-size: 18px; /* Increase font-size */
+    font-size: .8rem;
+    color: rgb(153, 115, 10);
+    font-family: Verdana, sans-serif;
   }
   
   #expVoteTable th, #expVoteTable td {
-    /* text-align: left; Left-align text */
+    text-align: left; Left-align text
     padding: 12px; /* Add padding */
   }
   
@@ -63,10 +65,4 @@ body {
 .button1:hover, .button2:hover {
   background-color: rgb(153, 115, 10);
   color: white;
-}
-
-#expVoteTable {
-  font-size: .8rem;
-  color: rgb(153, 115, 10);
-  font-family: Verdana, sans-serif;
 }
