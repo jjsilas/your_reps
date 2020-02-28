@@ -81,8 +81,4 @@ function renderVotes (data) {
 
 
 
-
-
-
-
 $(watchForm);
