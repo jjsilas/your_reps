@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   text-align:center;
   width:100%;
@@ -6,57 +10,62 @@ body {
   background-color: rgb(221, 203, 180);
 }
 
-
 /* When the input field gets focus, change its width to 100% */
 
+h3 {
+  font-family: Verdana, sans-serif;
+  font-size: 1.1rem;
+}
 
 #expVoteInput {
-    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
-    background-position: 10px 12px; /* Position the search icon */
-    background-repeat: no-repeat; /* Do not repeat the icon image */
-    width: 100%; /* Full-width */
-    font-size: 16px; /* Increase font-size */
-    padding: 12px 20px 12px 40px;  /*Add some padding */
-    border: 1px solid #ddd; /* Add a grey border */
-   margin-bottom: 10px;  /*Add some space below the input */
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px;  /*Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 10px;  /*Add some space below the input */
   }
   
-  #expVoteTable {   /* Voting results  */
-    border-collapse: collapse; /* Collapse borders */
-    width: 100%; 
-    border: 1px solid #ddd; /* Add a grey border */
-    font-size: .8rem;
-    color: rgb(153, 115, 10);
-    font-family: Verdana, sans-serif;
+#expVoteTable {   /* Voting results  */
+  border-collapse: collapse; /* Collapse borders */
+  width: 100%; 
+  border: 1px solid #ddd; /* Add a grey border */
+  font-size: .8rem;
+  color: rgb(153, 115, 10);
+  font-family: Verdana, sans-serif;
   }
   
-  #expVoteTable th, #expVoteTable td {
-    text-align: left; Left-align text
-    padding: 12px; /* Add padding */
+#expVoteTable th, #expVoteTable td {
+  text-align: left; /*Left-align text*/
+  padding: 12px; /* Add padding */
   }
   
-  #expVoteTable tr {
-    /* Add a bottom border to all table rows */
-    border-bottom: 1px solid #ddd;
+#expVoteTable tr {
+  /* Add a bottom border to all table rows */
+  border-bottom: 1px solid #ddd;
   }
   
-  #expVoteTable tr.header, #expVoteTable tr:hover {
-    /* Add a grey background color to the table header and on hover */
-    background-color: #f1f1f1;
+#expVoteTable tr.header, #expVoteTable tr:hover {
+  /* Add a grey background color to the table header and on hover */
+  background-color: #f1f1f1;
   }
-    #expVoteInput {
-      width: 80%;
+#expVoteInput {
+  width: 80%;
   }
 
 .congressMembersSec {
   width: 90%;
+  
+
     }
 
 .containerVoteExpBottom {
   padding: 12px 20px 12px 40px; /* Add some padding */
  }
 
- .button1, .button2 {
+.button1, .button2 {
   background-color: white; 
   color: black; 
   border: 2px solid rgb(125, 129, 125);
@@ -65,4 +74,9 @@ body {
 .button1:hover, .button2:hover {
   background-color: rgb(153, 115, 10);
   color: white;
+}
+
+.backToIndex {
+  width: 5%;
+  padding:5px;
 }

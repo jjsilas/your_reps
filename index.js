@@ -12,7 +12,7 @@ function formatQueryParams(params) {
   return queryItems.join('&');
 }
 
-function getNews(query, maxResults=10) {
+function getNews(query, maxResults = 10) {
   const params = {
     q: query,
     language: "en",
@@ -21,17 +21,18 @@ function getNews(query, maxResults=10) {
   const url = searchURL + '?' + queryString;
 
   console.log(url);
-  
+
   const options = {
     headers: new Headers({
-      "X-Api-Key": apiKey})
+      "X-Api-Key": apiKey
+    })
   };
 
   fetch(url, options)
     .then(response => response.json())
     .then(responseJson => render(responseJson));
 }
-function render (data) {
+function render(data) {
   const members = data.results[0].members
   const html = members.map(member => `
   <tr>
@@ -53,30 +54,40 @@ function watchForm() {
   });
 }
 function getVotes(member_id) {
-  
+
   const url = `https://api.propublica.org/congress/v1/members/${member_id}/explanations/116.json`
 
   console.log(url);
-  
+
   const options = {
     headers: new Headers({
-      "X-Api-Key": apiKey})
+      "X-Api-Key": apiKey
+    })
   };
 
   fetch(url, options)
     .then(response => response.json())
     .then(responseJson => renderVotes(responseJson));
 }
-function renderVotes (data) {
-  const votes = data.results
-  const html = votes.map(vote =>`
+function renderVotes(data) {
+  if (data.num_results == 0) {
+    const html = `<tr>
+    <td colspan="3"> Votes were not found for this Represenatitive.</td>
+    </tr>`
+    $('#vote').html(html)
+
+  } else {
+
+    const votes = data.results
+    const html = votes.map(vote => `
   <tr>
     <td>${vote.date}</td>
     <td>${vote.text}</td> 
       <td> ${vote.url} </td>
   </tr>
   `)
-  $('#vote').html(html)
+    $('#vote').html(html)
+  }
 }
 
 
