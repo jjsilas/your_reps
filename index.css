@@ -54,4 +54,11 @@ body {
     color: white;
   }
 
+  footer {
+      padding-top:30px;
+      font-size: .7rem;
+      font-family: Verdana, sans-serif;
+      font-weight: lighter;
+  }
+
 
