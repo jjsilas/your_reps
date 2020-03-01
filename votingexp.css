@@ -75,7 +75,12 @@ width: 20%;
   }
 
 .congressMembersSec {
-  width: 90%;
+  display: inline;
+  font-style: italic;
+  margin-top: 10px;
+  font-family: Verdana, sans-serif;
+  font-size: .8rem;
+  font-weight: lighter;
 }
 
 .containerVoteExpBottom {
@@ -149,6 +154,15 @@ a:visited {
 a:hover {
   text-decoration: underline;
 }
+
+h4 {
+  font-style: italic;
+  margin-top: 10px;
+  font-family: Verdana, sans-serif;
+  font-size: .8rem;
+  font-weight: lighter;
+}
+
 
 @media only screen and (min-width: 680px) {
   body {
