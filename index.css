@@ -56,9 +56,19 @@ body {
 
   footer {
       padding-top:30px;
-      font-size: .7rem;
+      font-size: .6rem;
       font-family: Verdana, sans-serif;
       font-weight: lighter;
   }
-
+  a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
 
