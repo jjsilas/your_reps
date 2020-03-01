@@ -72,7 +72,7 @@ function getVotes(member_id) {
 function renderVotes(data) {
   if (data.num_results == 0) {
     const html = `<tr>
-    <td colspan="3"> Votes were not found for this Represenatitive.</td>
+    <td colspan="3"> Details were not found for this Represenatitive.</td>
     </tr>`
     $('#vote').html(html)
 

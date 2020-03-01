@@ -49,7 +49,7 @@ body {
     border: 2px solid rgb(125, 129, 125);
   }
   
-  .button3:hover {
+.button3:hover {
     background-color: rgb(153, 115, 10);
     color: white;
   }
