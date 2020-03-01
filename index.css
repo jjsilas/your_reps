@@ -39,19 +39,28 @@ body {
     margin-left: auto ;
     margin-bottom: auto ;
     height: auto;
-    border-width: 2px black;
-    border: 100px;
+
 }
 
-.button3 {
-    background-color: white; 
-    color: black; 
-    border: 2px solid rgb(125, 129, 125);
-  }
+
+.enterLink { 
+    margin-top: -10px;
+    margin-left: 28%;
+    margin-right: 28%;
+    display: block;
+    font-size: .8em;
+    border-style: solid;
+    text-align: center;
+    color: rgb(114, 111, 111);
+    background-color: rgb(255, 255, 255);
+    font-family: Verdana, sans-serif;
+    font-weight: lighter;
+
+}
   
-.button3:hover {
-    background-color: rgb(153, 115, 10);
-    color: white;
+.enterLink:hover {
+    background-color: rgb(189, 146, 91);
+    color: rgb(10, 10, 9);
   }
 
   footer {
