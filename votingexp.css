@@ -2,13 +2,18 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
   text-align:center;
   width:100%;
   margin:0 auto;
   padding:0px;
-  /*background-color: rgb(221, 203, 180);*/
+  margin-top: -11px;
+  margin-right: -1px;
+  margin-left: -1px;
+  overflow-x: hidden;
 }
+
+  /*background-color: rgb(221, 203, 180);*/
 
 /* When the input field gets focus, change its width to 100% */
 
@@ -55,6 +60,8 @@ h3 {
   width: 80%;
   }
 
+/* col / row spacing for rep votes and details data */
+
   .thRep {
 width: 40%;
   }
@@ -66,9 +73,6 @@ width: 40%;
   .thDetail{
 width: 20%;
   }
-
-
-
 
 .congressMembersSec {
   width: 90%;
@@ -82,6 +86,7 @@ width: 20%;
   background-color: white; 
   color: black; 
   border: 2px solid rgb(125, 129, 125);
+  padding-right: 3px;
 }
 
 .button1:hover, .button2:hover {
@@ -97,4 +102,50 @@ width: 20%;
 .mainheader {
   background-color: rgb(15, 15, 14);
 
+}
+
+.every_vote_image {
+  width: 20%;
+  margin-left: auto ;
+  margin-bottom: auto ;
+  height: auto;
+  border-width: 2px black;
+  border: 100px;
+}
+
+#expVoteTable {
+  /*background-image: url(images/we-the-people.jpg);*/
+  background-size: cover;
+  background-color: rgb(219, 208, 206);
+  color: rgb(0, 0, 0);
+  margin-top: absolute;
+  background-blend-mode: multiply .5;
+}
+
+.main {
+  /*background-image: url(images/we-the-people.jpg);*/
+  background-size: cover;
+  background-color: rgb(221, 203, 180);
+  color: rgb(0, 0, 0);
+  margin-top: absolute;
+  background-blend-mode: multiply .5;
+}
+
+  /*copyright info;*/
+.proPublica, .jherich {
+  text-decoration: hidden;
+  font: .2em sans-serif;
+}
+
+  /*link info to remove underlined links in the footer*/
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
