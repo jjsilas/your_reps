@@ -149,3 +149,9 @@ a:visited {
 a:hover {
   text-decoration: underline;
 }
+
+@media only screen and (min-width: 680px) {
+  body {
+    background-color: lightblue;
+  }
+}
