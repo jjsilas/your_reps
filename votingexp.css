@@ -7,7 +7,7 @@ body {
   width:100%;
   margin:0 auto;
   padding:0px;
-  background-color: rgb(221, 203, 180);
+  /*background-color: rgb(221, 203, 180);*/
 }
 
 /* When the input field gets focus, change its width to 100% */
@@ -55,11 +55,24 @@ h3 {
   width: 80%;
   }
 
+  .thRep {
+width: 40%;
+  }
+
+  .thVCount {
+width: 40%;
+  }
+
+  .thDetail{
+width: 20%;
+  }
+
+
+
+
 .congressMembersSec {
   width: 90%;
-  
-
-    }
+}
 
 .containerVoteExpBottom {
   padding: 12px 20px 12px 40px; /* Add some padding */
@@ -79,4 +92,9 @@ h3 {
 .backToIndex {
   width: 5%;
   padding:5px;
+}
+
+.mainheader {
+  background-color: rgb(15, 15, 14);
+
 }

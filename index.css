@@ -6,8 +6,8 @@ html, body{
     margin-top: -11px;
     margin-left:-10px;
     margin-right: -10px;
+    overflow-x: hidden;
 }
-
 
 body {
     text-align:center;
@@ -17,17 +17,15 @@ body {
 }
 
 .mainheader {
-background-image: url(images/we-the-people.jpg);
-background-size: cover;
-background-color: rgb(0,0,0);
-background-blend-mode: multiply .2;
-color: rgb(51, 45, 45);
-margin-top: absolute;
-line-height: 2rem;
-text-shadow: rgb(219, 219, 216) 2px 3px 2px;
+    background-image: url(images/we-the-people.jpg);
+    background-size: cover;
+    background-color: rgb(0,0,0);
+    background-blend-mode: multiply .2;
+    color: rgb(51, 45, 45);
+    margin-top: absolute;
+    line-height: 2rem;
+    text-shadow: rgb(219, 219, 216) 2px 3px 2px;
 }
-
-
 
 .congress {
     width: 60%;
@@ -56,7 +54,4 @@ text-shadow: rgb(219, 219, 216) 2px 3px 2px;
     color: white;
   }
 
-  .button3 a:hover {
-    background-color: rgb(153, 115, 10);
-    color: rgb(97, 11, 11);
-  }
+
