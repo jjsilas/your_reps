@@ -70,7 +70,7 @@ function renderVotes(data) {
   let html=""
   if (data.num_results == 0) {
     html = `<tr>
-    <td colspan="3"> Details were not found for this Cogress Person Representatives in the API even through they may have some unlisted votes.</td>
+    <td colspan="3"> Details were not found for this Congress Person in the API.  </td>
     </tr>`
  
 
@@ -95,11 +95,8 @@ function renderVotes(data) {
   </div>
     </td>
     </tr>
-  
   `
   $('#vote').html(html)
 }
-
-
 
 $(watchForm);
