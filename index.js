@@ -36,7 +36,7 @@ function render(data) {
   <tr>
     <td>${member.first_name} ${member.last_name}</td>
     <td>${member.total_votes} (missed ${member.missed_votes})</td> 
-      <td> <button type="button" onClick="getVotes('${member.id}')"> getVotes </button> </td>
+      <td> <button type="button" onClick="getVotes('${member.id}')"> Vote Details </button> </td>
   </tr>
   `)
   $('#vote').html(html)
