@@ -12,15 +12,13 @@ function formatQueryParams(params) {
   return queryItems.join('&');
 }
 
-function getNews(query, maxResults = 10) {
+function getNews() {
   const params = {
-    q: query,
     language: "en",
   };
   const queryString = formatQueryParams(params)
   const url = searchURL + '?' + queryString;
 
-  console.log(url);
 
   const options = {
     headers: new Headers({
@@ -46,11 +44,10 @@ function render(data) {
 }
 
 function watchForm() {
+  getNews();
   $('#js-form').submit(event => {
     event.preventDefault();
-    const searchTerm = $('#js-search-term').val();
-    const maxResults = $('#js-max-results').val();
-    getNews(searchTerm, maxResults);
+    getNews();
   });
 }
 function getVotes(member_id) {
@@ -70,24 +67,37 @@ function getVotes(member_id) {
     .then(responseJson => renderVotes(responseJson));
 }
 function renderVotes(data) {
+  let html=""
   if (data.num_results == 0) {
-    const html = `<tr>
-    <td colspan="3"> Details were not found for this Represenatitive.</td>
+    html = `<tr>
+    <td colspan="3"> Details were not found for this Cogress Person Representatives in the API even through they may have some unlisted votes.</td>
     </tr>`
-    $('#vote').html(html)
+ 
 
   } else {
 
     const votes = data.results
-    const html = votes.map(vote => `
+    html = votes.map(vote => `
   <tr>
     <td>${vote.date}</td>
     <td>${vote.text}</td> 
       <td> ${vote.url} </td>
   </tr>
   `)
-    $('#vote').html(html)
+  
   }
+  html+=`
+  <tr>
+    <td colspan="3"> 
+    <div class="containerVoteExp">
+    <form id="js-form"> <button class="button button1" type="submit"> Click for list of Representatives </button>
+    </form>
+  </div>
+    </td>
+    </tr>
+  
+  `
+  $('#vote').html(html)
 }
 
 
