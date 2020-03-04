@@ -8,21 +8,24 @@ After talking to friends I wondered who many of your elected represenatives were
 
 ## Screenshots
 
-The index load load and shows an image of the House of Represenatitives, and the entry link for the application.
+The index loads and shows an image of Congress, and the entry link for the application. The long term idea for this app is that it will show both hosues.  And so it uses the term Represenatiives as a nod to our form of goverment rather than a specific title for the House or Senate. 
 
 ![Index ](YourReps_Index.png)
 
-This image shows the first view after you enter the app.  You will see the button pull the list of represenatives.
-
-![Entry into the app](YourReps_EmptyCount.png)
-
-This view shows the list of Represenatives, and just above it is the filter you can you select a specific member.
+This view shows the list of Seantors, and just above it is the filter you can you select a specific member.
 
 ![List of Reps](YourReps_Pop_Count.png)
 
-Finally the app shows the details available in the API about their voting record.
+This screen shows details when available in the API.  - An exmaple is Senator Tammy Baldwin.
 
 ![Voting Details](YourReps_Details.png)
+
+In some cases the API did not show vote details even for well known Seantors.  I looked at this with one of my Mentors and we double checked the API, unfortunately that data was not available.   - An exmaple is Senator Bernard Sanders.
+
+![Voting Details](YourReps_no_Details.png)
+
+Once you're done reviewing details, or if details aren't available.  Click the "Click for list of Represenatives Button"
+
 
 ## Summary
 
