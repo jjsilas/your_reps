@@ -30,12 +30,14 @@ function getNews() {
     .then(response => response.json())
     .then(responseJson => render(responseJson));
 }
+
+//Member Search
 function render(data) {
   const members = data.results[0].members
   const html = members.map(member => `
   <tr>
-    <td>${member.first_name} ${member.last_name}</td>
-    <td>${member.total_votes} (missed ${member.missed_votes})</td> 
+    <td>${member.first_name} ${member.last_name} - State ${member.state} - Party (${member.party})</td>
+    <td>Total Votes ${member.total_votes} (Missed Votes ${member.missed_votes})</td> 
       <td> <button type="button" onClick="getVotes('${member.id}')"> Vote Details </button> </td>
   </tr>
   `)
@@ -50,6 +52,8 @@ function watchForm() {
     getNews();
   });
 }
+
+//Member votes
 function getVotes(member_id) {
 
   const url = `https://api.propublica.org/congress/v1/members/${member_id}/explanations/116.json`
@@ -66,26 +70,27 @@ function getVotes(member_id) {
     .then(response => response.json())
     .then(responseJson => renderVotes(responseJson));
 }
+
+//Voting details
 function renderVotes(data) {
   let html=""
   if (data.num_results == 0) {
     html = `<tr>
-    <td colspan="3"> Details were not found for this Congress Person in the API.  </td>
+    <td colspan="3">There was no explanation for missing votes provided by this congress person on the record for this session so nothing is listed in the API. </td>
     </tr>`
- 
 
   } else {
-
     const votes = data.results
     html = votes.map(vote => `
   <tr>
-    <td>${vote.date}</td>
-    <td>${vote.text}</td> 
+    
+  <td><strong>Name </strong> ${data.display_name} date - ${vote.date}</td>
+    <td><strong>Explanation for missing vote/s: </strong><br>   ${vote.text}</td> 
       <td> ${vote.url} </td>
   </tr>
   `)
-  
   }
+
   html+=`
   <tr>
     <td colspan="3"> 
