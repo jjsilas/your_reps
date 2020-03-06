@@ -85,7 +85,7 @@ function renderVotes(data) {
   <tr>
     
   <td><strong>Name </strong> ${data.display_name} date - ${vote.date}</td>
-    <td><strong>Explanation for missing vote/s: </strong><br>   ${vote.text}</td> 
+    <td><strong>Explanation for missing vote/s: </strong><br>   ${vote.text} </td> 
       <td> ${vote.url} </td>
   </tr>
   `)
