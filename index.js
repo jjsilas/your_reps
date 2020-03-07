@@ -29,6 +29,7 @@ function getNews() {
   fetch(url, options)
     .then(response => response.json())
     .then(responseJson => render(responseJson));
+    //.catch(error => console.error(`Error: ${error}`)); 
 }
 
 //Member Search
