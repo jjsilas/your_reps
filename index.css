@@ -3,49 +3,61 @@
 }
 
 html, body{
-    margin-top: -11px;
-    margin-left:-10px;
-    margin-right: -10px;
-    overflow-x: hidden;
+  background: url(images/f_we_the_people_smallest_vp400px.png) no-repeat fixed rgb(203, 195, 177);
 }
 
 body {
     text-align:center;
     width:100%;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    background-color: rgb(221, 203, 180);
 }
 
 .mainheader {
-    background-image: url(images/we-the-people.jpg);
-    background-size: cover;
-    background-color: rgb(0,0,0);
-    background-blend-mode: multiply .2;
-    color: rgb(51, 45, 45);
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px #000000;
     margin-top: absolute;
     line-height: 2rem;
-    text-shadow: rgb(219, 219, 216) 2px 3px 2px;
+}
+
+.description1, .description2 {
+  text-align: left;
+  margin: 4%;
+  line-height: 1.1rem;
+  font-family: Verdana, sans-serif;
+  font-size: .8rem;
+  font-weight: lighter;
+  text-shadow: 2px 2px 7px #676262;
+}
+
+
+/* Senate Seal Image */
+.senateSeal200px {
+  max-width: 15%;
 }
 
 .congress {
-    width: 60%;
-    height: auto;
-    border-width: 2px black;
-    border: 10px;
+  width: 60%;
+  height: auto;
+  border-width: 2px black;
+  border: 5px;
 }
 
+.congress_floor {
+  margin: 3%;
+  width: 60%;
+}
+
+/* every vote circle image */
 .every_vote_image {
     width: 20%;
-    margin-top: -5%;
+    margin-top: 5%;
     margin-left: auto ;
     margin-bottom: auto ;
     height: auto;
-
 }
 
-
 .enterLink { 
-    margin-top: -10px;
+    margin-top: 1px;
     margin-left: 28%;
     margin-right: 28%;
     display: block;
@@ -60,12 +72,12 @@ body {
 }
   
 .enterLink:hover {
-    background-color: rgb(189, 146, 91);
+
     color: rgb(10, 10, 9);
   }
 
   footer {
-      padding-top:30px;
+    padding-top: 2px;
       font-size: .6rem;
       font-family: Verdana, sans-serif;
       font-weight: lighter;
@@ -89,17 +101,152 @@ body {
   }
 
 
-  @media only screen and (min-width: 680px) {
-    body {
-      background-color: lightblue;
-    }
+/* Media Queries Start */ 
+
+
+@media only screen and (min-width: 750px) {
+  /* Tablet */
+  html, body{
+    background: url(images/we-the-people_800px.png) no-repeat rgb(203, 195, 177);
   }
 
-  .every_vote_image {
-    width: 20%;
-    margin-top: -3%;
-    margin-left: auto ;
-    margin-bottom: auto ;
-    height: auto;
+  .mainheader {
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 8px #000000;
+    margin-top: absolute;
+    padding-top: 8%;
+    font-size: 1.5rem ;
+    line-height: 2rem;
+}
 
+  .description1, .description2 {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-top: 5%;
+    margin-left: 4%;
+    margin-right: 4%;
+    padding-top: 3%;
+    line-height: 2rem;
+    font-family: Verdana, sans-serif;
+    font-weight: lighter;
+    text-shadow: 3px 3px 8px #000000;
+    color: whitesmoke;
+}
+
+.description3 {
+  display: none;
+}
+
+/* Senate Seal Image */
+.senateSeal200px {
+    display: none;
+}
+
+/* every vote circle image */
+.every_vote_image {
+    width: 10%;
+    margin-top: 1%;
+}
+
+.congress_floor {
+  margin: -2%;
+  width: 45%;
+}
+
+/* every vote circle image */
+.every_vote_image {
+  width: 15%;
+  margin-top: 7%;
+  margin-bottom: auto ;
+  height: auto;
+}
+
+.enterLink { 
+  margin-top: -5px;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-bottom: 7%;
+  display: block;
+  font-size: .8em;
+  border-style: solid;
+  border-radius: 10px;
+  text-align: center;
+  color: rgb(114, 111, 111);
+  background-color: rgb(255, 255, 255);
+  font-family: Verdana, sans-serif;
+  font-weight: lighter;
+}
+
+@media only screen and (min-width: 1000px) {
+  /* Desktop */
+  html, body{
+    background: url(images/Constitution_of_the_United_States_page_1_LG_VP.jpg) no-repeat fixed rgb(203, 195, 177);
+    width: 100%;
+    height: 100%;
+
+  }
+
+
+  .mainheader {
+    color: rgb(33, 28, 28);
+    text-shadow: 3px 3px 8px #a2a1a1;
+    margin-top: -6%;
+    font-size: 1.2rem ;
+    line-height: 2rem;
+}
+
+  .description1, .description2 {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-top: 5%;
+    margin-left: 4%;
+    margin-right: 4%;
+    padding-top: 3%;
+    color:  rgb(52, 50, 50);
+    line-height: 2rem;
+    font-family: Verdana, sans-serif;
+
+    text-shadow: 3px 3px 8px #f4e5e5;
+   
+}
+
+
+/* Senate Seal Image */
+.senateSeal200px {
+  max-width: 15%;
+}
+
+/* every vote circle image */
+.every_vote_image {
+    width: 10%;
+    margin-top: 1%;
+}
+
+.congress_floor {
+  margin: -2%;
+  width: 45%;
+}
+
+/* every vote circle image */
+.every_vote_image {
+  width: 15%;
+  margin-top: 7%;
+  margin-bottom: auto ;
+  height: auto;
+}
+
+.enterLink { 
+  margin-top: -5px;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-bottom: 7%;
+  display: block;
+  font-size: .8em;
+  border-style: solid;
+  border-radius: 10px;
+  text-align: center;
+  color: rgb(114, 111, 111);
+  background-color: rgb(255, 255, 255);
+  font-family: Verdana, sans-serif;
+  font-weight: lighter;
 }

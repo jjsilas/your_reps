@@ -76,14 +76,13 @@ function renderVotes(data) {
   let html=""
   if (data.num_results == 0) {
     html = `<tr>
-    <td colspan="3">There was no explanation for missing votes provided by this congress person on the record for this session so nothing is listed in the API. </td>
+    <td colspan="3">The Senator did not provide an documented explanation for missing votes. </td>
     </tr>`
 
   } else {
     const votes = data.results
     html = votes.map(vote => `
   <tr>
-    
   <td><strong>Name </strong> ${data.display_name} date - ${vote.date}</td>
     <td><strong>Explanation for missing vote/s: </strong><br>   ${vote.text} </td> 
       <td> ${vote.url} </td>
