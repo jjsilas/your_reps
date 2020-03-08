@@ -26,11 +26,45 @@ function getNews() {
     })
   };
 
-  fetch(url, options)
-    .then(response => response.json())
+
+  
+
+
+    fetch(url, options)
+    .then(response => {
+      if (response.status === 500) {
+        // Render something to the page.
+       
+        
+        throw new Error(response.statusText);
+    }
+    .then(responseJson => displayResults(responseJson))
+    .catch(err => {
+      $('#js-error-message').text(`Something went wrong: ${err.message}`);
+
+
+
+        
+        
+        // Return so that we don't attempt to parse the json
+
+        
+        return;
+      }
+  
+      return response.json();
+    })
     .then(responseJson => render(responseJson));
-    //.catch(error => console.error(`Error: ${error}`)); 
+
+
+
+
 }
+
+
+
+
+
 
 //Member Search
 function render(data) {
