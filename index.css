@@ -186,7 +186,6 @@ body {
 
   }
 
-
   .mainheader {
     color: rgb(33, 28, 28);
     text-shadow: 3px 3px 8px #a2a1a1;
@@ -205,11 +204,9 @@ body {
     color:  rgb(52, 50, 50);
     line-height: 2rem;
     font-family: Verdana, sans-serif;
-
     text-shadow: 3px 3px 8px #f4e5e5;
    
 }
-
 
 /* Senate Seal Image */
 .senateSeal200px {
