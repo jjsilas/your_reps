@@ -26,16 +26,24 @@ function getNews() {
     })
   };
 
+  
   fetch(url, options)
     .then(response => {
-      if (response.status >= 400) {
-        $('#js-error-message').text(`Results are not available at the moment, please try again later. : ${err.message}`);        
+      console.log(response.status);
+      
+      if (!response.ok) {
+        throw new Error('things did not work')
       }
+
       return response.json()
 
     })
 
-    .then(responseJson => render(responseJson));
+    .then(responseJson => render(responseJson))
+    .catch(err => {
+      $('#js-error-message').text(`Results are not available at the moment, please try again later. : ${err.message}`);
+      console.log(err)
+    });
    
 }
 
