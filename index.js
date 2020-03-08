@@ -26,43 +26,19 @@ function getNews() {
     })
   };
 
-
-  
-
-
-    fetch(url, options)
+  fetch(url, options)
     .then(response => {
       if (response.status === 500) {
-        // Render something to the page.
-       
-        
-        throw new Error(response.statusText);
-    }
-    .then(responseJson => displayResults(responseJson))
-    .catch(err => {
-      $('').text(`Something went wrong: ${err.message}`);
-
-
-
-        
-        
-        // Return so that we don't attempt to parse the json
-
-        
-        return;
+        $('#js-error-message').text(`Something went wrong: ${err.message}`);        
       }
-  
-      return response.json();
+
+      return response.json()
+
     })
+
     .then(responseJson => render(responseJson));
-
-
-
-
+   
 }
-
-
-
 
 
 
