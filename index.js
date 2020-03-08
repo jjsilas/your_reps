@@ -28,10 +28,9 @@ function getNews() {
 
   fetch(url, options)
     .then(response => {
-      if (response.status === 500) {
-        $('#js-error-message').text(`Something went wrong: ${err.message}`);        
+      if (response.status >= 400) {
+        $('#js-error-message').text(`Results are not available at the moment, please try again later. : ${err.message}`);        
       }
-
       return response.json()
 
     })
