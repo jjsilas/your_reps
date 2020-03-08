@@ -1,79 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Your Representative </title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="votingexp.css">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    </head>
 
-    <body>   
-<section class="main">    
-        <header>
-            <h1>Voting Attendance</h1>
-            <h2>Are they representing you?</h2>
-        </header>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Your Representative </title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="votingexp.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
 
-<!--Search/Reduce results-->
-<section class="congressMembersSe"><h3>Congressional Members</h3>
-  
-</section>
+<body>
+  <section class="main">
+    <header>
+      <h1>Voting Attendance</h1>
+      <h2>Are they representing you?</h2>
+    </header>
 
-            <h3>The Current Congressional Session</h3>
+    <!--Search/Reduce results-->
+    <section class="congressMembersSe">
+      <h3>Congressional Members</h3>
 
-        <section><h4>Filter results below</h4>
-    <input type="text" id="expVoteInput" onkeyup="expVoteFunction()" placeholder="Filter names..">
-  </section>  
-<table id="expVoteTable">
-  <tr class="header">
-    <th class="thRep">Senators</th>
-    <th class="thVCount">Vote Count</th>
-  <th class="thDetail">Details if Available</th>
-  <tbody id='vote'> </tbody>
-</table>
-</section>
+    </section>
 
+    <h3>The Current Congressional Session</h3>
 
-<p id="js-error-message" class="error-message"></p>
-
-
-<div class="containerVoteExpBottom">
-  <form id="js-formButtons"> <button class="button button2" type="submit"> Back to top </button>
-  </form>
-        <div class="containerIndexPg"> 
-          <img src="images/everyvote.png" alt="Every Vote Matters" class="every_vote_image">
-         </div>
-      </div>
-
-  
+    <section>
+      <h4>Filter results below</h4>
+      <input type="text" id="expVoteInput" onkeyup="expVoteFunction()" placeholder="Filter names..">
+    </section>
+    <table id="expVoteTable">
+      <tr class="header">
+        <th class="thRep">Senators</th>
+        <th class="thVCount">Vote Count</th>
+        <th class="thDetail">Details if Available</th>
+        <tbody id='vote'> </tbody>
+    </table>
+  </section>
 
 
-      <div class="backToHome"> <a href="index.html"> <img src="images/leftarrow.png" alt="Return Back to Index" class="backToIndex"> </a> 
-      </div>
+  <p id="js-error-message" class="error-message"></p>
 
 
+  <div class="containerVoteExpBottom">
+    <form id="js-formButtons"> <button class="button button2" type="submit"> Back to top </button>
+    </form>
+    <div class="containerIndexPg">
+      <img src="images/everyvote.png" alt="Every Vote Matters" class="every_vote_image">
+    </div>
+  </div>
 
 
+  <div class="backToHome"> <a href="index.html"> <img src="images/leftarrow.png" alt="Return Back to Index"
+        class="backToIndex"> </a>
+  </div>
 
-      <footer>  
-<div class="proPublica">
-        <a href="https://www.propublica.org/datastore/api/propublica-congress-api">The API data is provided via Pro Publica Inc. " Copyright 2020 Pro Publica Inc. All Rights Reserved."</a>
+
+  <footer>
+    <div class="proPublica">
+      <a href="https://www.propublica.org/datastore/api/propublica-congress-api">The API data is provided via Pro
+        Publica Inc. " Copyright 2020 Pro Publica Inc. All Rights Reserved."</a>
     </div>
 
     <div class="jherich">
-        <a href="jherichsilas.com">App by Jherich Silas Initial Capstone with Thinkful Feb. 2020"</a>
+      <a href="jherichsilas.com">App by Jherich Silas Initial Capstone with Thinkful Feb. 2020"</a>
     </div>
-      </footer>
+  </footer>
 
-        <script src="index.js"></script>
-        <!--The stylesheet below is being used to control the sort function-->
-        <script src="voting_exp.js"></script>
-        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    </body>
+  <script src="index.js"></script>
+  <!--The stylesheet below is being used to control the sort function-->
+  <script src="voting_exp.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</body>
+
 </html>
