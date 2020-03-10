@@ -8,7 +8,7 @@ const searchURL = 'https://api.propublica.org/congress/v1/116/senate/members.jso
 
 function formatQueryParams(params) {
   const queryItems = Object.keys(params)
-    .map(key => `${key}=${params[key]}`)
+    .map(key => `${key}=${params[key]}`);
   return queryItems.join('&');
 }
 
@@ -16,7 +16,7 @@ function getNews() {
   const params = {
     language: "en",
   };
-  const queryString = formatQueryParams(params)
+  const queryString = formatQueryParams(params);
   const url = searchURL + '?' + queryString;
 
 
@@ -35,7 +35,7 @@ function getNews() {
         throw new Error('things did not work')
       }
 
-      return response.json()
+      return response.json();
 
     })
 
@@ -58,8 +58,8 @@ function render(data) {
     <td>Total Votes ${member.total_votes} (Missed Votes ${member.missed_votes})</td> 
       <td> <button type="button" onClick="getVotes('${member.id}')"> Vote Details </button> </td>
   </tr>
-  `)
-  $('#vote').html(html)
+  `);
+  $('#vote').html(html);
 
 }
 
@@ -105,7 +105,7 @@ function renderVotes(data) {
     <td><strong>Explanation for missing vote/s: </strong><br>   ${vote.text} </td> 
       <td> ${vote.url} </td>
   </tr>
-  `)
+  `);
   }
 
   html+=`
@@ -118,7 +118,7 @@ function renderVotes(data) {
     </td>
     </tr>
   `
-  $('#vote').html(html)
+  $('#vote').html(html);
 }
 
 $(watchForm);
