@@ -4,6 +4,7 @@
 
 html, body{
   background: url(images/f_we_the_people_smallest_vp400px.png) no-repeat fixed rgb(203, 195, 177);
+
 }
 
 body {
@@ -25,8 +26,8 @@ body {
   line-height: 1.1rem;
   font-family: Verdana, sans-serif;
   font-size: .8rem;
-  font-weight: lighter;
-  text-shadow: 2px 2px 7px #676262;
+  //font-weight: lighter;
+  text-shadow: 4px 4px 9px #ffffff;
 }
 
 
@@ -96,8 +97,11 @@ body {
 
   h6 {
       font-style: italic;
-      font-weight: lighter;
+      
       margin-top: 10px;
+      text-shadow: 3px 3px 8px #000000;
+      color: rgb(255, 255, 255);
+      font-size: 1.3rem;
   }
 
 
