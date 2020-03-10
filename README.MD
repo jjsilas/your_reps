@@ -1,14 +1,14 @@
 # YourReps
 
-YourReps is a application that allows you to see how and if your elected Represenatives are voting. 
+YourReps is a application that allows you to see how and if your Senators are voting. 
 
 ## Motivation
 
-After talking to friends I wondered who many of your elected represenatives were actually representing us. So I built this application to see how often they did their elected duty.
+After talking to friends I wondered who many of our Senators were actually representing us. So I built this application to see how often they did their elected duty.
 
 ## Screenshots
 
-The index loads and shows an image of Congress, and the entry link for the application. The long term idea for this app is that it will show both hosues.  And so it uses the term Represenatiives as a nod to our form of goverment rather than a specific title for the House or Senate. 
+The index loads and shows an image of Congress, and the entry link for the application. The long term idea for this app is that it will show both hosues.  And so it uses the term represenatives as a nod to our form of goverment rather than a specific title for the House or Senate. 
 
 ![Index ](images/readme/YourReps_Index.png)
 
@@ -24,12 +24,12 @@ In some cases the API did not show vote details even for well known Seantors.  I
 
 ![Voting Details](images/readme/YourReps_no_Details.png)
 
-Once you're done reviewing details, or if details aren't available.  Click the "Click for list of Represenatives Button"
+Once you're done reviewing details, or if details aren't available.  Click the "Click for list of Senators Button"
 
 
 ## Summary
 
-The application was built to allow anyone to quickly see a list of their Represenativies and decide if they belived by their record that they were doing their elected job.
+The application was built to allow anyone to quickly see a list of their Senators and decide if they belived by their record that they were doing their elected job.
 
 ## Built With
 
