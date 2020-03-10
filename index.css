@@ -181,7 +181,7 @@ body {
   /* Desktop */
   html, body{
     background: url(images/Constitution_of_the_United_States_page_1_LG_VP.jpg)  no-repeat fixed rgb(203, 195, 177);
-  
+  align-items: center;
 
   }
 
