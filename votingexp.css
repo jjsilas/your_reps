@@ -47,6 +47,10 @@ h3 {
   padding: 12px; /* Add padding */
   }
   
+.thead {
+  background-color: #f1f1f1;
+}
+
 #expVoteTable tr {
   /* Add a bottom border to all table rows */
   border-bottom: 1px solid #ddd;
