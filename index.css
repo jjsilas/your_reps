@@ -104,7 +104,7 @@ body {
 /* Media Queries Start */ 
 
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 620px) {
   /* Tablet */
   html, body{
     background: url(images/we-the-people_800px.png) no-repeat rgb(203, 195, 177);
