@@ -29,7 +29,6 @@ function getNews() {
   
   fetch(url, options)
     .then(response => {
-     
       
       if (!response.ok) {
         throw new Error('things did not work')
@@ -42,7 +41,6 @@ function getNews() {
     .then(responseJson => render(responseJson))
     .catch(err => {
       $('#js-error-message').text(`Results are not available at the moment, please try again later. : ${err.message}`);
-      
     });
    
 }
@@ -75,8 +73,6 @@ function watchForm() {
 function getVotes(member_id) {
 
   const url = `https://api.propublica.org/congress/v1/members/${member_id}/explanations/116.json`
-
-
 
   const options = {
     headers: new Headers({
