@@ -2,7 +2,8 @@
 
 'use strict';
 
-const apiKey = 'LUcpaYS4z2SvZUKWDsBRj7M6XrWbpVP5JBWMdAcW'
+<!-- API KEY Removed from GitHub -->
+const apiKey = 'REMOVE FROM GIT'
 
 const searchURL = 'https://api.propublica.org/congress/v1/116/senate/members.json';
 
