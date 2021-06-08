@@ -2,15 +2,17 @@
     box-sizing: border-box;
 }
 
-html, body{
-  background: url(/images/f_we_the_people_smallest_vp400px.png) no-repeat fixed rgb(203, 195, 177);
 
+.container {
+  margin: 3%;
+  padding-top: 10%;
+  background: url(/images/f_we_the_people_smallest_vp400px.png) no-repeat  rgb(203, 195, 177);
 }
 
 body {
     text-align:center;
     width:100%;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .mainheader {
@@ -20,15 +22,36 @@ body {
     line-height: 2rem;
 }
 
-.description1, .description2 {
-  text-align: left;
+
+
+.repHeading {
+margin-top: 35%;
+}
+
+.repSubHeading {
+  font-size: 1.25rem;
+}
+
+.yourVoteCt{
+  font-size: 1.25rem;
+  padding-bottom: 10%;
+  border-bottom: 1px solid  rgb(182, 182, 196);
+}
+
+
+.enterapp {
+  text-align: center;
+}
+
+ .description1, .description2 {
+  text-align: center;
   margin: 4%;
   line-height: 1.1rem;
   font-family: Verdana, sans-serif;
   font-size: .8rem;
   font-weight: lighter;
   text-shadow: 4px 4px 9px #ffffff;
-}
+} 
 
 
 /* Senate Seal Image */
