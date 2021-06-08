@@ -3,7 +3,7 @@
 }
 
 html, body{
-  background: url(images/f_we_the_people_smallest_vp400px.png) no-repeat fixed rgb(203, 195, 177);
+  background: url(/images/f_we_the_people_smallest_vp400px.png) no-repeat fixed rgb(203, 195, 177);
 
 }
 
@@ -26,7 +26,7 @@ body {
   line-height: 1.1rem;
   font-family: Verdana, sans-serif;
   font-size: .8rem;
-  //font-weight: lighter;
+  font-weight: lighter;
   text-shadow: 4px 4px 9px #ffffff;
 }
 
@@ -111,9 +111,9 @@ body {
 @media only screen and (min-width: 620px) {
   /* Tablet */
   html, body{
-    background: url(images/we-the-people_800px.png) no-repeat fixed rgb(203, 195, 177);
+    background: url(/images/we-the-people_800px.png) no-repeat fixed rgb(203, 195, 177);
   }
-
+}
   .mainheader {
     color: rgb(255, 255, 255);
     text-shadow: 3px 3px 8px #000000;
@@ -184,10 +184,11 @@ body {
 @media only screen and (min-width: 1024px) {
   /* Desktop */
   html, body{
-    background: url(images/Constitution_of_the_United_States_page_1_LG_VP.jpg)  no-repeat fixed rgb(203, 195, 177);
+    background: url(/images/Constitution_of_the_United_States_page_1_LG_VP.jpg)  no-repeat fixed rgb(203, 195, 177);
 text-align: left auto;
 text-align: right auto;
   }
+}
 
   .mainheader {
     color: rgb(255, 255, 255);
@@ -207,9 +208,7 @@ text-align: right auto;
     color:  rgb(52, 50, 50);
     line-height: 2rem;
     font-family: Verdana, sans-serif;
-
     text-shadow: 3px 3px 8px #f4e5e5;
-   
 }
 
 /* Senate Seal Image */
